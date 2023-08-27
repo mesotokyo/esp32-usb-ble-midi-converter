@@ -49,8 +49,9 @@ protected:
     log_i("interval: %d, timeout: %d, latency: %d on startup",
           desc->conn_itvl, desc->supervision_timeout, desc->conn_latency);
 
-    //pServer->updateConnParams(desc->conn_handle, 15, 15, 0, 400);
+    //pServer->updateConnParams(desc->conn_handle, 12, 12, 0, 400);
     //pServer->updateConnParams(desc->conn_handle, 6, 8, 0, 400);
+    //pServer->updateConnParams(desc->conn_handle, 48, 72, 0, 400);
   };
 
   void onDisconnect(BLEServer *) {
